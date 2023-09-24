@@ -1,4 +1,12 @@
-public class IPhone implements ReprodutorMusical, Telefone, NavegadorInternet{
+package App;
+
+import Tools.NavegadorInternet;
+import Tools.ReprodutorMusical;
+import Tools.Telefone;
+
+
+
+public class IPhone implements ReprodutorMusical, Telefone, NavegadorInternet {
 
 
     @Override
@@ -7,13 +15,13 @@ public class IPhone implements ReprodutorMusical, Telefone, NavegadorInternet{
     }
 
     @Override
-    public void adicionandoNovaPagina() {
+    public void adicionarNovaPagina() {
         System.out.println("Adicionando nova pagina");
     }
 
 
     @Override
-    public void atualizaPagina() {
+    public void atualizarPagina() {
         System.out.println("Atualizando a pagina");
     }
 
@@ -24,7 +32,7 @@ public class IPhone implements ReprodutorMusical, Telefone, NavegadorInternet{
 
     @Override
     public void pausar() {
-        System.out.println("Musica parada");
+        System.out.println("Parando a musica");
     }
 
     @Override
@@ -46,4 +54,5 @@ public class IPhone implements ReprodutorMusical, Telefone, NavegadorInternet{
     public void iniciarCorreioVoz() {
         System.out.println("Ouvindo correio de voz");
     }
+
 }

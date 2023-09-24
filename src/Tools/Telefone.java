@@ -1,3 +1,5 @@
+package Tools;
+
 public interface Telefone {
     public void ligar();
     public void atender();
